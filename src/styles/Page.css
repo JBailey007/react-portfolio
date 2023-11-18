@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar CSS styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+/* Title Styling */
+.website-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+/* Navbar Links ul, li and a tags */
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+/* navbar hover background color change */
+.navbar-links li:hover {
+    background-color: grey;
+}
+/* banner image CSS */
+#banner {
+    display: flex;
+}
+
+#banner img {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+
+}
+
+
+/* Flexbox containers for main section below the Banner */
+.flexbox-container1 {
+    display: flex;
+    background-color: white;
+}
+
+.aboutMe-flexbox {
+    display: flex;
+    width: 200px;
+    min-height:200px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.aboutMe-flexbox h2 {
+    font-size: 32px;
+    color: black;
+    padding-right: 10px;
+}
+
+.aboutMe-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+
+.aboutMe-paragraph p {
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 1em;
+    color: black;
+    border-left: 8px solid #333;
+}
+
+/* Work Section */
+.section-margin {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.flexbox-container2 {
+    display: flex;
+}
+
+.work-flexbox {
+    display: flex;
+    width: 200px;
+    min-height:750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-flexbox h2 {
+    font-size: 32px;
+    color: black;
+    padding-right: 10px;
+}
+
+.work-images-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    border-left: 8px solid #333;
+}
+.work-box-big {
+    margin: 15px;
+    width: 100%;
+    height: 600px;
+    border: 5px solid black;
+}
+
+.work-box-small {
+    margin: 5px;
+    width: 48%;
+    height: 200px;
+    border: 5px solid black;
+}
+
+
+/* Work Box Hover State */
+.work-box-big:hover {
+    background-color: lightgray;
+    opacity: .5;
+}
+
+.work-box-small:hover {
+    background-color: lightgray;
+    opacity: .5;
+}
+
+
+/* Images in the work section boxes */
+.work-box-big img {
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+}
+
+.work-box-small img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+/* Text Cards for each Div Box */
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+    width: 300px;
+    height: 45px;
+    position: relative;
+    bottom: 60px;
+}
+
+/* Footer (Contact) Section */
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+}
+/* Contact Title Styling */
+.contact-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+/* Navbar Links ul, li and a tags */
+.contact-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.contact-links li {
+    list-style: none;
+}
+
+.contact-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+/* contact links hover background color change */
+.contact-links li:hover {
+    background-color: grey;
+}
+
+/* media queries when the page has a max width of 600px */
+@media screen and (max-width: 900px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links{
+        width: 100%;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .aboutMe-flexbox {
+        display: flex;
+    }
+
+    .aboutMe-paragraph {
+        font-size: 13px;
+    }
+    .text-card{
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 744px) {
+    .work-box-small , .work-box-3 , .work-box-4 , .work-box-5{
+    flex-direction: column;
+    margin: 5px;
+    width: 100%;
+    height: 200px;
+    border: 5px solid black;
+    }
+    .work-box-big {
+    flex-direction: column;
+    margin: 5px;
+    width: 100%;
+    height: 600px;
+    border: 5px solid black;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-margin {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flexbox-container1 {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    }
+
+    .flexbox-container2 {
+        display: flex;
+        width: 100%;
+        height: 75px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        }
+
+}
