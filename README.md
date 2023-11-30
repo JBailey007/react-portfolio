@@ -20,7 +20,7 @@ The bottom footer contains links that will take you outside of the page where yo
 N/A
 
 # Screenshot
-![Screenshot of Website for Developer Portfolio](<Screenshot 2023-06-26 151805.png>)
+![Portfolio Webpage](React-Portfolio.png)
 
 ## License
 Please refer to the LICENSE in the repo. 
