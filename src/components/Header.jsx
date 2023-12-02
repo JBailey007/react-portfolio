@@ -1,4 +1,5 @@
 import '../styles/Navbar.css';
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -6,9 +7,9 @@ function Header() {
             <div className="website-title"> Jalen Bailey</div>
             <div className="navbar-links">
                 <ul>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Work">Work</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><Link to ={`/`}>About</Link></li>
+                    <li><Link to ={`/work`}>Work</Link></li>
+                    <li><Link to ={`/contact`}>Contact Me</Link></li>
                 </ul>
             </div>
         </nav>
