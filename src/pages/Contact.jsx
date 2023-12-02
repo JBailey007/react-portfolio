@@ -1,3 +1,4 @@
+import ContactForm from "../components/Contactform";
 import Header from "../components/Header";
 
 const Contact = () => {
@@ -6,7 +7,9 @@ const Contact = () => {
         <div>
             <Header />
         </div>
-            Coming Soon
+        <div>
+           <ContactForm />
+        </div>
         </div>
     )
 }
