@@ -2,9 +2,8 @@ import '../styles/Page.css';
 
 function Footer() {
     return (
-        <footer>
-            <div className="contact-section">
-                <div className="contact-title"> Contact Me</div>
+        <footer className="contact-section">
+            <div>
                 <div className="contact-links">
                 <ul id="Contact">
                     <li><a href ="mailto:jwbailey13@gmail.com">Email</a></li>
